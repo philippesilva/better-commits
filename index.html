@@ -1,0 +1,161 @@
+<!DOCTYPE html language="us">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metas Seo -->
+    <meta name="title" content="Better Commits" />
+    <meta
+      name="description"
+      content="A tool for writing better commits, following the conventional commit guidelines."
+    />
+    <meta
+      name="keywords"
+      content="commit, lint,  conventional commit, better commits, git commit, git"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="author" content="https://philippe.dev" />
+    <link rel="icon" type="image/x-icon" href="assets/git-commit.svg" />
+
+    <!-- Title -->
+    <title>Better Commits</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/fonts-gelion/fonts-gelion.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              gelion: ["Gelion Regular", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="font-gelion h-screen container mx-auto flex flex-col justify-between"
+  >
+    <!-- Header -->
+    <header class="p-6">
+      <a href="/" title="Better Commits" class="flex items-center gap-2">
+        Better Commits
+      </a>
+    </header>
+
+    <!-- Main -->
+    <main class="flex justify-center items-center flex-col -mt-60">
+      <div class="w-96">
+        <h1 class="font-bold text-black text-2xl">Create your better commit</h1>
+
+        <p class="text-gray-600 text-sm py-6">
+          A tool for writing better commits, following the conventional commit
+          guidelines.
+        </p>
+
+        <form id="form" class="h-full flex items-center flex-col gap-4">
+          <select
+            type="text"
+            name="type"
+            placeholder="Type"
+            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+            required
+          >
+            <option value="feat">✨ Feat - A new feature</option>
+            <option value="fix">🐛 Fix - A bug fix</option>
+            <option value="docs">📚 Docs - Documentation only changes</option>
+            <option value="refactor">
+              🔨 Refactor - A code change that neither fixes a bug nor adds a
+              feature
+            </option>
+            <option value="perf">
+              🚀 Perf - A code change that improves performance
+            </option>
+            <option value="test">
+              🚨 Test - Adding missing tests or correcting existing tests
+            </option>
+            <option value="build">
+              🚧 Build - Changes that affect the build system or external
+              dependencies
+            </option>
+            <option value="ci">
+              🤖 CI - Changes to our CI configuration files and scripts
+            </option>
+            <option value="chore">
+              🧹 Chore - Other changes that do not modify src or test files
+            </option>
+          </select>
+
+          <input
+            type="text"
+            name="scope"
+            placeholder="Scope (optional)"
+            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+          />
+
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject - brief description about the change"
+            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+            required
+          />
+
+          <textarea
+            name="body"
+            placeholder="body (optional)"
+            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+          ></textarea>
+
+          <textarea
+            name="footer"
+            placeholder="footer (optional)"
+            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+          ></textarea>
+
+          <textarea
+            disabled
+            type="text"
+            name="message"
+            id="message"
+            class="w-full h-44 rounded-md bg-gray-50 p-6"
+            placeholder="your message :)"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full flex items-center gap-2 justify-center p-2 bg-black text-white rounded-md"
+          >
+            Create and copy to clipboard
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center">
+      <p class="text-gray-600 text-sm py-6">
+        Create by
+        <a
+          href="https://philippe.dev"
+          target="_blank"
+          title="Philippe Silva"
+          class="text-black"
+        >
+          Philippe Silva
+        </a>
+      </p>
+    </footer>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
