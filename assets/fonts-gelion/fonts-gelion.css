@@ -1,0 +1,93 @@
+@font-face {
+  font-family: Gelion Regular Italic;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Regular Italic"),
+    url("Gelion Regular Italic.0864875f.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Regular"),
+    url("Gelion Regular.1ab0e933.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Light;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Light"), url("Gelion Light.c8969044.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Thin Italic;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Thin Italic"),
+    url("Gelion Thin Italic.2262c885.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Light Italic;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Light Italic"),
+    url("Gelion Light Italic.7ca18b4a.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Thin;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Thin"), url("Gelion Thin.b80e6127.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Medium Italic;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Medium Italic"),
+    url("Gelion Medium Italic.a23df7bd.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Medium;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Medium"), url("Gelion Medium.83a2efb1.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Semi Bold Italic;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Semi Bold Italic"),
+    url("Gelion SemiBold Italic.3dbaed68.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Semi Bold;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Semi Bold"),
+    url("Gelion SemiBold.b7e76ec2.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Bold Italic;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Bold Italic"),
+    url("Gelion Bold Italic.a73825a0.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Bold;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Bold"), url("Gelion Bold.83f68e98.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Black Italic;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Black Italic"),
+    url("Gelion Black Italic.115034fc.woff") format("woff");
+}
+@font-face {
+  font-family: Gelion Black;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Gelion Black"), url("Gelion Black.a802dd3a.woff") format("woff");
+}
