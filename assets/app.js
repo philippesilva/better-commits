@@ -8,6 +8,7 @@ const types = {
   build: "🚧 build",
   ci: "🤖 ci",
   chore: "🧹 chore",
+  style: "💅 style"
 };
 
 function setClipboard() {
