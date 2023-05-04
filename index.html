@@ -22,7 +22,7 @@
     <link rel="icon" type="image/x-icon" href="assets/git-commit.svg" />
 
     <!-- Title -->
-    <title>Better Commits</title>
+    <title>Better Commits - A tool for writing better commits</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/fonts-gelion/fonts-gelion.css" />
@@ -55,7 +55,7 @@
       <div class="md:w-96 sm:w-full p-6">
         <h1 class="font-bold text-black text-2xl">Create your better commit</h1>
 
-        <p class="text-gray-600 text-sm py-6">
+        <p class="text-gray-600 py-6">
           A tool for writing better commits, following the
           <a
             href="https://www.conventionalcommits.org/en/v1.0.0/"
@@ -72,7 +72,7 @@
             type="text"
             name="type"
             placeholder="Type"
-            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+            class="border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
             required
           >
             <option value="feat">✨ Feat - A new feature</option>
@@ -107,7 +107,7 @@
             type="text"
             name="scope"
             placeholder="Scope (optional)"
-            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+            class="border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
             maxlength="72"
           />
 
@@ -115,7 +115,7 @@
             type="text"
             name="subject"
             placeholder="Subject - brief description about the change"
-            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+            class="border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
             maxlength="72"
             required
           />
@@ -123,13 +123,13 @@
           <textarea
             name="body"
             placeholder="body (optional)"
-            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+            class="border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
           ></textarea>
 
           <textarea
             name="footer"
             placeholder="footer (optional)"
-            class="text-sm border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
+            class="border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
           ></textarea>
 
           <textarea
@@ -143,7 +143,7 @@
 
           <button
             type="submit"
-            class="w-full flex items-center gap-2 justify-center p-2 bg-black text-white rounded-md"
+            class="w-full flex items-center gap-2 justify-center p-2 bg-black text-white rounded-md transform active:scale-90 transition-transform"
           >
             Create and copy to clipboard
           </button>
@@ -153,7 +153,7 @@
 
     <!-- Footer -->
     <footer class="p-6 text-center">
-      <p class="text-gray-600 text-sm py-6">
+      <p class="text-gray-600 py-6">
         Create by
         <a
           href="https://philippe.dev"
