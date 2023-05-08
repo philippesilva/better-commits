@@ -1,14 +1,14 @@
-const types = {
-  feat: "✨ feat",
-  fix: "🐛 fix",
-  docs: "📚 docs",
-  refactor: "🔨 refactor",
-  perf: "🚀 perf",
-  test: "🚨 test",
-  build: "🚧 build",
-  ci: "🤖 ci",
-  chore: "🧹 chore",
-  style: "💅 style"
+const icons = {
+  feat: "✨",
+  fix: "🐛",
+  docs: "📚",
+  refactor: "🔨",
+  perf: "🚀erf",
+  test: "🚨",
+  build: "🚧",
+  ci: "🤖",
+  chore: "🧹",
+  style: "💅",
 };
 
 function setClipboard() {
@@ -22,31 +22,35 @@ function setClipboard() {
   navigator.clipboard.writeText(messageToClipboard.value);
 }
 
-function setView(obj) {
+function createMessage(obj) {
   const breakLine = "\n\n";
 
   const text = {
-    type: types[obj.type],
+    type: obj.type,
+    icon: icons[obj.type],
+    subject: obj.subject,
     scope: obj.scope === "" ? "" : `(${obj.scope})`,
     body: obj.body === "" ? "" : `${breakLine}${obj.body}`,
     footer: obj.footer === "" ? "" : `${breakLine}${obj.footer}`,
   };
 
-  const messageToHtml = `${text.type}${text.scope}: ${obj.subject}${text.body}${text.footer}`;
+  const message = `${text.type}${text.scope}: ${text.icon} ${text.subject}${text.body}${text.footer}`;
 
-  document.querySelector("#message").value = messageToHtml.trim();
+  return message.trim();
 }
 
-function getData(form) {
-  var formData = new FormData(form);
-
-  const obj = Object.fromEntries(formData);
-
-  setView(obj);
-  setClipboard();
+function setView(message) {
+  document.querySelector("#message").value = message;
 }
 
 document.getElementById("form").addEventListener("submit", function (e) {
   e.preventDefault();
-  getData(e.target);
+
+  var formData = new FormData(e.target);
+  const obj = Object.fromEntries(formData);
+
+  const message = createMessage(obj);
+
+  setView(message);
+  setClipboard();
 });
