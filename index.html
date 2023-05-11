@@ -39,9 +39,7 @@
     </script>
   </head>
 
-  <body
-    class="font-gelion h-screen container mx-auto flex flex-col justify-between"
-  >
+  <body class="font-gelion container mx-auto">
     <!-- Header -->
     <header class="w-full p-6">
       <a href="/" title="Better Commits" class="flex items-center gap-2">
@@ -50,7 +48,7 @@
     </header>
 
     <!-- Main -->
-    <main class="flex justify-center items-center flex-col md:-mt-60">
+    <main class="flex justify-center items-center flex-col mt-20">
       <div class="md:w-96 sm:w-full p-6">
         <h1 class="font-bold text-black text-2xl">Create your better commit</h1>
 
@@ -66,7 +64,7 @@
           guidelines.
         </p>
 
-        <form id="form" class="h-full flex items-center flex-col gap-4">
+        <form id="form" class="h-full flex flex-col gap-4">
           <select
             type="text"
             name="type"
@@ -131,6 +129,20 @@
             class="border p-2 rounded-md w-full placeholder:text-gray-500 focus:border-black"
           ></textarea>
 
+          <div class="flex items-center">
+            <!-- Checkbox -->
+            <input
+              id="checkbox"
+              type="checkbox"
+              name="addEmoji"
+              class="absolute h-4 w-4 accent-black bg-grey-700 text-red-500 rounded cursor-pointer"
+              checked
+            />
+            <label for="checkbox" class="ml-6 text-gray-500"
+              >Add emoji in message?</label
+            >
+          </div>
+
           <textarea
             disabled
             type="text"
@@ -151,7 +163,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="p-6 text-center">
+    <footer class="w-full p-6 text-center">
       <p class="text-gray-600 py-6">
         Create by
         <a

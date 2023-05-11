@@ -27,14 +27,14 @@ function createMessage(obj) {
 
   const text = {
     type: obj.type,
-    icon: icons[obj.type],
+    icon: obj.addEmoji ? ` ${icons[obj.type]} ` : "",
     subject: obj.subject,
     scope: obj.scope === "" ? "" : `(${obj.scope})`,
     body: obj.body === "" ? "" : `${breakLine}${obj.body}`,
     footer: obj.footer === "" ? "" : `${breakLine}${obj.footer}`,
   };
 
-  const message = `${text.type}${text.scope}: ${text.icon} ${text.subject}${text.body}${text.footer}`;
+  const message = `${text.type}${text.scope}:${text.icon} ${text.subject}${text.body}${text.footer}`;
 
   return message.trim();
 }
